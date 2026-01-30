@@ -12,4 +12,6 @@ import { EXAMPLES } from './data';
 export class AppComponent {
   data = EXAMPLES
   title = 'angular-essentials';
+
+  
 }
