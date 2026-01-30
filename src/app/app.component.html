@@ -1,0 +1,13 @@
+<div class="body">
+<div class="cards">
+    <h1>Core Concepts</h1>
+   <div class="core">
+     @for(CORE_CONCEPT of CORE_CONCEPTS; track CORE_CONCEPT.title){
+            <app-carte-component Image={{CORE_CONCEPT.image}} description ={{CORE_CONCEPT.description}} title={{CORE_CONCEPT.title}}></app-carte-component>
+
+    }
+   </div>
+    
+   
+</div>
+</div>

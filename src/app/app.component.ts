@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CarteComponentComponent } from './carte-component/carte-component.component';
+import { CORE_CONCEPTS } from './data';
 
 @Component({
   selector: 'app-root',
@@ -10,5 +11,5 @@ import { CarteComponentComponent } from './carte-component/carte-component.compo
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'angular-essentials';
+  CORE_CONCEPTS =  CORE_CONCEPTS 
 }
