@@ -1,3 +1,4 @@
+
 <div class="body">
 <div class="cards">
     <h1>Core Concepts</h1>
@@ -10,4 +11,18 @@
     
    
 </div>
+<div class="tab-button">
+    <h4>EXAMPLES</h4>
+    <div class="btns">
+        @for (item of data; track $index) {
+            <app-tab-button label={{item.title}} >
+                @if(item.title ==""){
+                <div>{{}}</div>
+            }
+            </app-tab-button>
+            
+        }
+    </div>
 </div>
+</div>
+
