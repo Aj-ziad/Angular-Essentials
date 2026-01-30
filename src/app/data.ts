@@ -38,14 +38,8 @@ export const CORE_CONCEPTS: CoreConcept[] = [
 // =======================
 // EXAMPLES (Tabs content)
 // =======================
-export const EXAMPLES: {
-  [key: string]: {
-    title: string;
-    description: string;
-    code: string;
-  };
-} = {
-  components: {
+export const EXAMPLES = [
+  {
     title: 'Angular Components',
     description: 'A simple standalone component example.',
     code: `
@@ -58,7 +52,7 @@ export class ExampleComponent {}
     `
   },
 
-  templates: {
+  {
     title: 'Templates',
     description: 'Using interpolation and property binding.',
     code: `
@@ -67,7 +61,7 @@ export class ExampleComponent {}
     `
   },
 
-  directives: {
+  {
     title: 'Control Flow',
     description: 'Using the new Angular 17 control flow syntax.',
     code: `
@@ -79,7 +73,7 @@ export class ExampleComponent {}
     `
   },
 
-  services: {
+  {
     title: 'Services',
     description: 'A simple Angular service.',
     code: `
@@ -91,4 +85,4 @@ export class DataService {
 }
     `
   }
-};
+];
