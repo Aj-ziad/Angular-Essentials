@@ -1,12 +1,47 @@
 
-<app-header> </app-header>
+
+
+<div class="body">
+<app-header></app-header>
+<div class="cards">
+    <h1>Core Concepts</h1>
+   <div class="core">
+     @for(CORE_CONCEPT of CORE_CONCEPTS; track CORE_CONCEPT.title){
+            <app-carte-component Image={{CORE_CONCEPT.image}} description ={{CORE_CONCEPT.description}} title={{CORE_CONCEPT.title}}></app-carte-component>
+
+    }
+   </div>
+    
+   
+</div>
 
 <div class="tab-button">
     <h4>EXAMPLES</h4>
     <div class="btns">
-        @for (item of data; track $index) {
-            <app-tab-button label={{item.title}} ></app-tab-button>
-        }
+        @for (item of data; track item.title) {
+            <app-tab-button 
+             [label]="item.title"   
+             [active]="item === selectedExample"
+             (event)="selectExample(item)" >
+               
+            </app-tab-button>}
+            
+        
     </div>
+    <div class="details">
+    @if (selectedExample) {
+      <h1>{{ selectedExample.title }}</h1>
+      <p>{{ selectedExample.description }}</p>
+
+      <pre>
+        <code>{{ selectedExample.code }}</code>
+      </pre>
+    }
+  </div>
 </div>
+ 
+
+</div>
+
+
 

@@ -10,25 +10,25 @@ export interface CoreConcept {
 // =======================
 export const CORE_CONCEPTS: CoreConcept[] = [
   {
-    image: 'assets/angular-logo.png',
+    image: '/assets/components.png',
     title: 'Components',
     description:
       'Components are the main building blocks of Angular applications. They control a part of the UI.'
   },
   {
-    image: 'assets/angular-logo.png',
+    image: 'assets/jsx-ui.png',
     title: 'Templates',
     description:
       'Templates define the view of a component using HTML enhanced with Angular syntax.'
   },
   {
-    image: 'assets/angular-logo.png',
+    image: 'assets/config.png',
     title: 'Directives',
     description:
       'Directives add behavior to existing DOM elements. Angular 17 introduces the new control flow syntax.'
   },
   {
-    image: 'assets/angular-logo.png',
+    image: 'assets/state-mgmt.png',
     title: 'Services',
     description:
       'Services are used to share logic and data across components using dependency injection.'
