@@ -1,12 +1,49 @@
+
+.body{
+  background-color: #230742;
+  font-family: Arial, Helvetica, sans-serif;
+  max-height: 100vh;
+}
+h1{
+  color: rgb(196, 193, 193);
+}
+
+
+.cards {
+  background: hsl(268, 70%, 11%);
+  color: white;
+  border-radius: 14px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+  display: flex;
+  margin: 70px;
+  flex-direction: column;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+  
+}
+.core{
+    display: flex;
+}
+
+
+
+
+
 .tab-button{
-    background-color: #250c46;
-    margin: 0;
-    padding: 0;
+    /* background-color: #250c46; */
+    /* margin: 100px 100px 100px 0; */
+    padding: 50px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin: 70px;
     justify-content: center;
-    align-items: start;
+    align-items: center;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+
+    
+    /* width:100vh; */
 }
 
 .tab-button h4{
@@ -20,4 +57,23 @@
     flex-direction: row;
     gap: 8px;
     padding-top: 5px;
+}
+.details {
+  width:150vh;
+  margin-left:20px ;
+  background-color: #5b377dbc;
+  color: #9f83b7;
+    font-size: 10px;
+     box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+}
+.details h1{
+  margin-left:20px ;
+  color: #c9a6e8;
+  font-size: 18px;
+
+
+}
+.details p, pre{
+  margin-left:20px ;
+  
 }

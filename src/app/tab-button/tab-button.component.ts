@@ -10,11 +10,11 @@ import { Component, EventEmitter, Input, Output,  } from '@angular/core';
 export class TabButtonComponent {
   @Input() active: boolean = false;
   @Input() label!: string;
-  @Output() event = new EventEmitter();
+  @Output() event = new EventEmitter<void>();
 
-  isOn(){
-    this.active = !this.active
-    this.event.emit()
+  onClick(){
+    // this.active = !this.active
+    this.event.emit();
   }
 
 }
